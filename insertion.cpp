@@ -9,24 +9,18 @@ class TreeNode{
                 left=nullptr;
                 right=nullptr;
             }
-};
-TreeNode* insert(TreeNode* root, int key) {
-    if(root==nullptr) return new TreeNode(key);
+}; 
+// Function to insert a value into the BST
+    TreeNode* insert(TreeNode* node, int value) {
+        if (node == nullptr) {
+            return new TreeNode(value);
+        }
 
-    TreeNode* cur=root;
-    while(true){
-        if(cur->value<=key){  //move right
-           if(cur->right!=nullptr) cur=cur->right;
-           else{
-            cur->right=new TreeNode(key);break;
-           }
+        if (value < node->value) {
+            node->left = insert(node->left, value);
+        } else if (value > node->value) {
+            node->right = insert(node->right, value);
         }
-        else{ //move left
-           if(cur->left!=nullptr) cur=cur->left;
-           else{
-            cur->left=new TreeNode(key);break;
-           }
-        }
+
+        return node;
     }
-    return root;  
-}
