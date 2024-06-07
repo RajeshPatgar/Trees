@@ -1,0 +1,5 @@
+Tree Traversal Methods
+In-order Traversal: Left, Root, Right
+Pre-order Traversal: Root, Left, Right
+Post-order Traversal: Left, Right, Root
+Level-order Traversal: Traverse level by level from top to bottom
