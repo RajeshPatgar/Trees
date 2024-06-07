@@ -1,0 +1,29 @@
+Definition of Trees
+A tree is a data structure that consists of nodes connected by edges. It has the following properties:
+
+Root: The top node in a tree. There is exactly one root node in a non-empty tree.
+Edges: The connections between nodes.
+Node: Each element of a tree. A node can have a value, and pointers to its child nodes.
+Child: A node directly connected to another node when moving away from the root.
+Parent: The converse notion of a child. A node has one parent, except for the root node which has no parent.
+Siblings: Nodes that share the same parent.
+Leaf (External node): A node that does not have any children.
+Internal node: A node that has at least one child.
+Subtree: A tree consisting of a node and its descendants.
+Depth: The length of the path from the root to a node.
+Height: The length of the path from a node to the deepest leaf.
+Types of Trees
+Binary Tree: A tree in which each node has at most two children, referred to as the left child and the right child.
+Binary Search Tree (BST): A binary tree in which for each node, the value of all the nodes in the left subtree is less than the node’s value, and the value of all the nodes in the right subtree is greater than the node’s value.
+Balanced Tree: A tree where the height of the left and right subtrees of any node differ by at most one.
+AVL Tree: A self-balancing binary search tree where the difference in heights between the left and right subtrees of any node is at most one.
+Red-Black Tree: A self-balancing binary search tree where each node has an extra bit for denoting the color of the node, either red or black.
+N-ary Tree: A tree in which a node can have at most N children.
+Trie: A tree-like data structure that stores a dynamic set of strings, typically used for retrieval of a key in a dataset of strings.
+Applications of Trees
+Hierarchical Data Representation: Examples include file systems, organization structures, and XML/HTML data.
+Binary Search Trees (BST): Efficient for search, insert, and delete operations.
+Heaps: Used to implement priority queues.
+Syntax Trees: Used in compilers to represent the syntax of programming languages.
+Tries: Used for efficient retrieval of words in a dictionary.
+Example of a Simple Binary Tree
